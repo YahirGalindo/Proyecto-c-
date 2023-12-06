@@ -52,6 +52,66 @@ int pregunta = 0;
                     case 1:
                     cout<<"Decides atacarlo pero este hombre parece ser un mago con experiencia por lo que te derrota fácilmente"<<endl;
                     break;
+                    case 2:
+                    cout<<"-Lo lamento pero no puedo dejar pasara a aquellos que no han demostrado su valía-"<<endl;
+                    cout<<"-Sin embargo soy un hombre de segundas oportunidades entonces si quieres pasar tendrás que responder justamente lo que quiero escuchar-"<<endl;
+                    cout<<"-Este envuelto en una situación muy apretada en la que te cuesta encontrar una solución sin embargo llegaste a este problema por culpa de tus propias acciones que harías-"<<endl;
+                    cout<<"1. Pedir ayuda"<<endl;
+                    cout<<"2. Dobalra esfuerzos"<<endl;
+                    cout<<"3. No me sucederia"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        pregunta += 3;
+                        break;
+                        case 2:
+                        pregunta += 1;
+                        break;
+                        case 3:
+                        pregunta += -1;
+                        break;
+                    }
+                    cout<<"-Bien ahora supongamos que eres el líder de un pequeño pueblo a las lejanías y estas pasando por una dura sequia tu gente tiene hambre y sed, hay un pueblo vecino rebosante de recursos y una gran selva con los recursos que necesitas a la lejanía-"<<endl;
+                    cout<<"Si pides ayuda te endeudaras con un pueblo muy superior a tu pequeña comunidad y si organizas viajes de recolección tus habitantes podrían no resistir que harías-"<<endl;
+                    cout<<"1. Buscaria al pueblo vecino"<<endl;
+                    cout<<"2. Me fijaría en la selva"<<endl;
+                    cout<<"3. Robaria al pueblo vecino"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        pregunta += 1;
+                        break;
+                        case 2:
+                        pregunta += 3;
+                        break;
+                        case 3:
+                        pregunta += -1;
+                        break;}
+                    cout<<"-Perfecto última pregunta si la persona que más odias, una persona al zar y tu estuvieran en peligro de muerte"<<endl;
+                    cout<<"-1 Salvarías a la persona desconocida-"<<endl;
+                    cout<<"-2Salvarias a la persona que más odias lo que automáticamente salvaría al la otra persona-"<<endl;
+                    cout<<"3-te salvaría a ti mismo -"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        pregunta += -1;
+                        break;
+                        case 2:
+                        pregunta += 1;
+                        break;
+                        case 3:
+                        pregunta += 3;
+                        break;
+                        
+                    }cout<<pregunta;
+                        //resultado
+                        if(pregunta>=1){cout<<"Adelante puedes pasar"<<endl;}
+                        else if(pregunta>=5){magia += 1;
+                        }else{cout<<"Lo siento no puedes pasar"; exit(0);}
+                    break;
                     case 3:
                     cout<<"Optas por utilizar una sucia estrategia en la que con un ingenio mayúsculo distraes al hombre del puente y sales corriendo"<<endl;
                     cout<< "Corres por un largo periodo de tiempo pero es como si el comino que recorres no acabara terminas agotado y te desmayas"<<endl;
@@ -138,8 +198,32 @@ int pregunta = 0;
                                     default:cout<<"opcion inexistente"<<endl;//continuar
                                     break;
                                 }
-                                
- 
+                                default:cout<<"opcion inexistente"<<endl;
+                                break;
+                            }
+                            break;
+                            case 2:
+                            cout<<"Decides tratar de bloquearlo con tu hacha pero su fuerza es abrumadora partiendo tu hacah en dos"<<endl;
+                            break;
+                            case 3:
+                            cout<<"Se atacan de manera simultanea pero el es mas fuerte y eres vencido"<<endl;
+                            break;
+                            default:cout<<"opcion inexistente"<<endl;
+                            break;}
+                        case 2:
+                        cout<<"Intentas negociar con él para evitar este combate pero él es un barbaro no aceptara excusas y te derriba"<<endl;
+                        break;
+                        case 3:
+                        cout<<"Te lo piensas y tratas de huir sin embargo él es más rápido que tú, lo has molestado"<<endl;
+                        cout<<"-Acaso intentaste huir, no hay nada que odie más que los cobardes-"<<endl;
+                        cout<<"Te lanza un golpe que te derrumba "<<endl;
+                        break;
+                        case 0:
+                        cout<<"Decides rendirte y se lo haces saber al mago por lo que con un movimiento de su baston te manda a dormir"<<endl;
+                        break;
+                        default:cout<<"opcion inexistente"<<endl;
+                        break;
+                    }
                     break;
                     case 2:
                     cout<<"Prefieres alejarte y seguir tu camino"<<endl;
@@ -155,14 +239,72 @@ int pregunta = 0;
                 cout<<"1. Luchar"<<endl;
                 cout<<"2. Dialogar"<<endl;
                 cout<<"3. La 13:14"<<endl;
-                cout<<"0. Rendirte"<<endl;//RUTA TRANQULA
+                cout<<"0. Rendirte"<<endl;
                 cout<<magia<<" de magia"<<endl;
                 cin>>eleccion;
                 switch(eleccion){
                     case 1:
                     cout<<"Decides atacarlo pero este hombre parece ser un mago con experiencia por lo que te derrota fácilmente"<<endl;
                     break;
+                    case 2:
+                    cout<<"-Lo lamento pero no puedo dejar pasara a aquellos que no han demostrado su valía-"<<endl;
+                    cout<<"-Sin embargo soy un hombre de segundas oportunidades entonces si quieres pasar tendrás que responder justamente lo que quiero escuchar-"<<endl;
+                    cout<<"-Este envuelto en una situación muy apretada en la que te cuesta encontrar una solución sin embargo llegaste a este problema por culpa de tus propias acciones que harías-"<<endl;
+                    cout<<"1. Pedir ayuda"<<endl;
+                    cout<<"2. Dobalra esfuerzos"<<endl;
+                    cout<<"3. No me sucederia"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        pregunta += 2;
+                        break;
+                        case 2:
+                        pregunta += 1;
+                        break;
+                        case 3:
+                        pregunta += -1;
+                        break;
+                    }
+                    cout<<"-Bien ahora supongamos que eres el líder de un pequeño pueblo a las lejanías y estas pasando por una dura sequia tu gente tiene hambre y sed, hay un pueblo vecino rebosante de recursos y una gran selva con los recursos que necesitas a la lejanía-"<<endl;
+                    cout<<"Si pides ayuda te endeudaras con un pueblo muy superior a tu pequeña comunidad y si organizas viajes de recolección tus habitantes podrían no resistir que harías-"<<endl;
+                    cout<<"1. Buscaria al pueblo vecino"<<endl;
+                    cout<<"2. Me fijaría en la selva"<<endl;
+                    cout<<"3. Robaria al pueblo vecino"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        pregunta += 1;
+                        break;
+                        case 2:
+                        pregunta += 2;
+                        break;
+                        case 3:
+                        pregunta += -1;
+                        break;}
+                    cout<<"-Perfecto última pregunta si la persona que más odias, una persona al zar y tu estuvieran en peligro de muerte"<<endl;
+                    cout<<"-1 Salvarías a la persona desconocida-"<<endl;
+                    cout<<"-2Salvarias a la persona que más odias lo que automáticamente salvaría al la otra persona-"<<endl;
+                    cout<<"3-te salvaría a ti mismo -"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        pregunta += -1;
+                        break;
+                        case 2:
+                        pregunta += 1;
+                        break;
+                        case 3:
+                        pregunta += 2;
+                        break;}
+                        //resultado
+                        if(pregunta>=1){cout<<"Adelante puedes pasar"<<endl;}
+                        else if(pregunta>=5){magia += 1;
+                        }else{cout<<"Lo siento no puedes pasar"; exit(0);}
                     
+                    break;
                     case 3:
                     cout<<"Optas por utilizar una sucia estrategia en la que con un ingenio mayúsculo distraes al hombre del puente y sales corriendo"<<endl;
                     cout<< "Corres por un largo periodo de tiempo pero es como si el comino que recorres no acabara terminas agotado y te desmayas"<<endl;
@@ -198,14 +340,71 @@ int pregunta = 0;
                 cout<<"1. Luchar"<<endl;
                 cout<<"2. Dialogar"<<endl;
                 cout<<"3. La 13:14"<<endl;
-                cout<<"0. Rendirte"<<endl;
+                cout<<"0. Rendirte"<<endl;//rUTA TRANQUILA
                 cout<<magia<<" de magia"<<endl;
                 cin>>eleccion;
                 switch(eleccion){
                     case 1:
                     cout<<"Decides atacarlo pero este hombre parece ser un mago con experiencia por lo que te derrota fácilmente"<<endl;
                     break;
-                    
+                    case 2:
+                    cout<<"-Lo lamento pero no puedo dejar pasara a aquellos que no han demostrado su valía-"<<endl;
+                    cout<<"-Sin embargo soy un hombre de segundas oportunidades entonces si quieres pasar tendrás que responder justamente lo que quiero escuchar-"<<endl;
+                    cout<<"-Este envuelto en una situación muy apretada en la que te cuesta encontrar una solución sin embargo llegaste a este problema por culpa de tus propias acciones que harías-"<<endl;
+                    cout<<"1. Pedir ayuda"<<endl;
+                    cout<<"2. Dobalra esfuerzos"<<endl;
+                    cout<<"3. No me sucederia"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        pregunta += 2;
+                        break;
+                        case 2:
+                        pregunta += 1;
+                        break;
+                        case 3:
+                        pregunta += -1;
+                        break;
+                    }
+                    cout<<"-Bien ahora supongamos que eres el líder de un pequeño pueblo a las lejanías y estas pasando por una dura sequia tu gente tiene hambre y sed, hay un pueblo vecino rebosante de recursos y una gran selva con los recursos que necesitas a la lejanía-"<<endl;
+                    cout<<"Si pides ayuda te endeudaras con un pueblo muy superior a tu pequeña comunidad y si organizas viajes de recolección tus habitantes podrían no resistir que harías-"<<endl;
+                    cout<<"1. Buscaria al pueblo vecino"<<endl;
+                    cout<<"2. Me fijaría en la selva"<<endl;
+                    cout<<"3. Robaria al pueblo vecino"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        pregunta += 1;
+                        break;
+                        case 2:
+                        pregunta += 2;
+                        break;
+                        case 3:
+                        pregunta += -1;
+                        break;}
+                    cout<<"-Perfecto última pregunta si la persona que más odias, una persona al zar y tu estuvieran en peligro de muerte"<<endl;
+                    cout<<"-1 Salvarías a la persona desconocida-"<<endl;
+                    cout<<"-2Salvarias a la persona que más odias lo que automáticamente salvaría al la otra persona-"<<endl;
+                    cout<<"3-te salvaría a ti mismo -"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        pregunta += -1;
+                        break;
+                        case 2:
+                        pregunta += 1;
+                        break;
+                        case 3:
+                        pregunta += 2;
+                        break;}
+                        //resultado
+                        if(pregunta>=1){cout<<"Adelante puedes pasar"<<endl;}
+                        else if(pregunta>=5){magia += 1;
+                        }else{cout<<"Lo siento no puedes pasar"; exit(0);}
+                    break;
                     case 3:
                     cout<<"Optas por utilizar una sucia estrategia en la que con un ingenio mayúsculo distraes al hombre del puente y sales corriendo"<<endl;
                     cout<< "Corres por un largo periodo de tiempo pero es como si el comino que recorres no acabara terminas agotado y te desmayas"<<endl;
@@ -233,7 +432,7 @@ int pregunta = 0;
                     cout<<"corriste entre el bosque hasta que tu camino termina por culpa de un rio de rapidas corrientes caminas por las orillas buscando como cruzar pero no había forma de que lograras algo asi que simplemete te rendiste"<<endl;
                     break;
                     default:cout<<"opcion inexistente"<<endl;
-                    break;
+                    break;//RUTA PELEA
                 }
                 break;
                 case 3:
@@ -266,3 +465,9 @@ int pregunta = 0;
     }
   
     return 0;}
+
+
+
+
+
+
