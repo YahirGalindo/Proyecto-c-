@@ -111,6 +111,30 @@ int pregunta = 0;
                         if(pregunta>=1){cout<<"Adelante puedes pasar"<<endl;}
                         else if(pregunta>=5){magia += 1;
                         }else{cout<<"Lo siento no puedes pasar"; exit(0);}
+                    cout<<"Siguiendo las instrucciones que te han dado llegas a una cámara como por la que saliste sabes que has llegado al final  sin embargo lees un mensaje que dice"<<endl;
+                    cout<<"-Si la luz quieres alcanzar tu magia debes mostrar en caso de fallar saldrás por la puerta de atrás-"<<endl;
+                    cout<<"Seguido de una bandeja de plata que haces"<<endl;
+                    cout<<"1. colocar tu bastón"<<endl;
+                    cout<<"2. colocar tu hacha"<<endl;
+                    cout<<"3. Toamar la perta tracera"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        if(magia==5){cout<<"– Felicidades haz demostrado ser capaz de tomar las decisiones correctas en los peores momentos el mejor mago no es aquel que controla mejor la magia sino que el que sabe que hacer incluso sin ella eres acredito del título de aprendiz por favor tome la puerta trasera y espere próximas instrucciones"<<endl;
+                        }else{cout<<"Haz logrado alcanzar el final pero lamentablemente no tiene las capacidades para tomar el título de mago por favor tome la puerta trasera y no se preocupe la energía que acumula su cuerpo se será suprimida gradualmente"<<endl;}
+                        break;
+                        case 2:
+                        if(arma==1){cout<<"felicidades haz mostrado una gran valía y perseverancia enfrentándote a las más duras situaciones demostraste ser capaz de utilizar tu magia para el combate lo que te hace acreedor del título de guerrero mágico por favor tome la puerta trasera y espere próximas instrucciones"<<endl;
+                        }else{cout<<"Haz logrado alcanzar el final pero lamentablemente no tiene las capacidades para tomar el título de guerrero por favor tome la puerta trasera y no se preocupe la energía que acumula su cuerpo se será suprimida gradualmente"<<endl;}
+                        break;
+                        case 3:
+                        cout<<"Estás cansado de esto por lo que simplemente te acercas a la puerta y un mensaje aparece diciendo: Pareces no querer esto y lo respetamos por lo que la cruzar esta puerta regresaras a casa y tu poder mágico ser suprimido gradualmente descansa te lo haz ganado"<<endl;
+                        break;
+                        default:
+                        cout<<"opcion inexistente"<<endl;
+                        break;}
+
                     break;
                     case 3:
                     cout<<"Optas por utilizar una sucia estrategia en la que con un ingenio mayúsculo distraes al hombre del puente y sales corriendo"<<endl;
@@ -198,6 +222,31 @@ int pregunta = 0;
                                     default:cout<<"opcion inexistente"<<endl;//continuar
                                     break;
                                 }
+                                
+                    cout<<"Siguiendo las instrucciones que te han dado llegas a una cámara como por la que saliste sabes que has llegado al final  sin embargo lees un mensaje que dice"<<endl;
+                    cout<<"-Si la luz quieres alcanzar tu magia debes mostrar en caso de fallar saldrás por la puerta de atrás-"<<endl;
+                    cout<<"Seguido de una bandeja de plata que haces"<<endl;
+                    cout<<"1. colocar tu bastón"<<endl;
+                    cout<<"2. colocar tu hacha"<<endl;
+                    cout<<"3. Toamar la perta tracera"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        if(magia==5){cout<<"– Felicidades haz demostrado ser capaz de tomar las decisiones correctas en los peores momentos el mejor mago no es aquel que controla mejor la magia sino que el que sabe que hacer incluso sin ella eres acredito del título de aprendiz por favor tome la puerta trasera y espere próximas instrucciones"<<endl;
+                        }else{cout<<"Haz logrado alcanzar el final pero lamentablemente no tiene las capacidades para tomar el título de mago por favor tome la puerta trasera y no se preocupe la energía que acumula su cuerpo se será suprimida gradualmente"<<endl;}
+                        break;
+                        case 2:
+                        if(arma==1){cout<<"felicidades haz mostrado una gran valía y perseverancia enfrentándote a las más duras situaciones demostraste ser capaz de utilizar tu magia para el combate lo que te hace acreedor del título de guerrero mágico por favor tome la puerta trasera y espere próximas instrucciones"<<endl;
+                        }else{cout<<"Haz logrado alcanzar el final pero lamentablemente no tiene las capacidades para tomar el título de guerrero por favor tome la puerta trasera y no se preocupe la energía que acumula su cuerpo se será suprimida gradualmente"<<endl;}
+                        break;
+                        case 3:
+                        cout<<"Estás cansado de esto por lo que simplemente te acercas a la puerta y un mensaje aparece diciendo: Pareces no querer esto y lo respetamos por lo que la cruzar esta puerta regresaras a casa y tu poder mágico ser suprimido gradualmente descansa te lo haz ganado"<<endl;
+                        break;
+                        default:
+                        cout<<"opcion inexistente"<<endl;
+                        break;}
+                                break;
                                 default:cout<<"opcion inexistente"<<endl;
                                 break;
                             }
@@ -230,7 +279,7 @@ int pregunta = 0;
                     cout<<"corriste entre el bosque hasta que tu camino termina por culpa de un rio de rapidas corrientes caminas por las orillas buscando como cruzar pero no había forma de que lograras algo asi que simplemete te rendiste"<<endl;
                     break;
                     default:cout<<"opcion inexistente"<<endl;
-                    break;}
+                    break;}//rUTA PELEA
                     
                 break;
                 case 3:
@@ -239,7 +288,7 @@ int pregunta = 0;
                 cout<<"1. Luchar"<<endl;
                 cout<<"2. Dialogar"<<endl;
                 cout<<"3. La 13:14"<<endl;
-                cout<<"0. Rendirte"<<endl;
+                cout<<"0. Rendirte"<<endl;//RUTA TRANQULA
                 cout<<magia<<" de magia"<<endl;
                 cin>>eleccion;
                 switch(eleccion){
@@ -303,7 +352,29 @@ int pregunta = 0;
                         if(pregunta>=1){cout<<"Adelante puedes pasar"<<endl;}
                         else if(pregunta>=5){magia += 1;
                         }else{cout<<"Lo siento no puedes pasar"; exit(0);}
-                    
+                    cout<<"Siguiendo las instrucciones que te han dado llegas a una cámara como por la que saliste sabes que has llegado al final  sin embargo lees un mensaje que dice"<<endl;
+                    cout<<"-Si la luz quieres alcanzar tu magia debes mostrar en caso de fallar saldrás por la puerta de atrás-"<<endl;
+                    cout<<"Seguido de una bandeja de plata que haces"<<endl;
+                    cout<<"1. colocar tu bastón"<<endl;
+                    cout<<"2. colocar tu hacha"<<endl;
+                    cout<<"3. Toamar la perta tracera"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        if(magia==5){cout<<"– Felicidades haz demostrado ser capaz de tomar las decisiones correctas en los peores momentos el mejor mago no es aquel que controla mejor la magia sino que el que sabe que hacer incluso sin ella eres acredito del título de aprendiz por favor tome la puerta trasera y espere próximas instrucciones"<<endl;
+                        }else{cout<<"Haz logrado alcanzar el final pero lamentablemente no tiene las capacidades para tomar el título de mago por favor tome la puerta trasera y no se preocupe la energía que acumula su cuerpo se será suprimida gradualmente"<<endl;}
+                        break;
+                        case 2:
+                        if(arma==1){cout<<"felicidades haz mostrado una gran valía y perseverancia enfrentándote a las más duras situaciones demostraste ser capaz de utilizar tu magia para el combate lo que te hace acreedor del título de guerrero mágico por favor tome la puerta trasera y espere próximas instrucciones"<<endl;
+                        }else{cout<<"Haz logrado alcanzar el final pero lamentablemente no tiene las capacidades para tomar el título de guerrero por favor tome la puerta trasera y no se preocupe la energía que acumula su cuerpo se será suprimida gradualmente"<<endl;}
+                        break;
+                        case 3:
+                        cout<<"Estás cansado de esto por lo que simplemente te acercas a la puerta y un mensaje aparece diciendo: Pareces no querer esto y lo respetamos por lo que la cruzar esta puerta regresaras a casa y tu poder mágico ser suprimido gradualmente descansa te lo haz ganado"<<endl;
+                        break;
+                        default:
+                        cout<<"opcion inexistente"<<endl;
+                        break;}
                     break;
                     case 3:
                     cout<<"Optas por utilizar una sucia estrategia en la que con un ingenio mayúsculo distraes al hombre del puente y sales corriendo"<<endl;
@@ -404,6 +475,29 @@ int pregunta = 0;
                         if(pregunta>=1){cout<<"Adelante puedes pasar"<<endl;}
                         else if(pregunta>=5){magia += 1;
                         }else{cout<<"Lo siento no puedes pasar"; exit(0);}
+                    cout<<"Siguiendo las instrucciones que te han dado llegas a una cámara como por la que saliste sabes que has llegado al final  sin embargo lees un mensaje que dice"<<endl;
+                    cout<<"-Si la luz quieres alcanzar tu magia debes mostrar en caso de fallar saldrás por la puerta de atrás-"<<endl;
+                    cout<<"Seguido de una bandeja de plata que haces"<<endl;
+                    cout<<"1. colocar tu bastón"<<endl;
+                    cout<<"2. colocar tu hacha"<<endl;
+                    cout<<"3. Toamar la perta tracera"<<endl;
+                    cout<<magia<<" de magia"<<endl;
+                    cin>>eleccion;
+                    switch(eleccion){
+                        case 1:
+                        if(magia==5){cout<<"– Felicidades haz demostrado ser capaz de tomar las decisiones correctas en los peores momentos el mejor mago no es aquel que controla mejor la magia sino que el que sabe que hacer incluso sin ella eres acredito del título de aprendiz por favor tome la puerta trasera y espere próximas instrucciones"<<endl;
+                        }else{cout<<"Haz logrado alcanzar el final pero lamentablemente no tiene las capacidades para tomar el título de mago por favor tome la puerta trasera y no se preocupe la energía que acumula su cuerpo se será suprimida gradualmente"<<endl;}
+                        break;
+                        case 2:
+                        if(arma==1){cout<<"felicidades haz mostrado una gran valía y perseverancia enfrentándote a las más duras situaciones demostraste ser capaz de utilizar tu magia para el combate lo que te hace acreedor del título de guerrero mágico por favor tome la puerta trasera y espere próximas instrucciones"<<endl;
+                        }else{cout<<"Haz logrado alcanzar el final pero lamentablemente no tiene las capacidades para tomar el título de guerrero por favor tome la puerta trasera y no se preocupe la energía que acumula su cuerpo se será suprimida gradualmente"<<endl;}
+                        break;
+                        case 3:
+                        cout<<"Estás cansado de esto por lo que simplemente te acercas a la puerta y un mensaje aparece diciendo: Pareces no querer esto y lo respetamos por lo que la cruzar esta puerta regresaras a casa y tu poder mágico ser suprimido gradualmente descansa te lo haz ganado"<<endl;
+                        break;
+                        default:
+                        cout<<"opcion inexistente"<<endl;
+                        break;}
                     break;
                     case 3:
                     cout<<"Optas por utilizar una sucia estrategia en la que con un ingenio mayúsculo distraes al hombre del puente y sales corriendo"<<endl;
@@ -465,9 +559,6 @@ int pregunta = 0;
     }
   
     return 0;}
-
-
-
 
 
 
